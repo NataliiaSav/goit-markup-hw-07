@@ -21,25 +21,25 @@
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav list">
-            <li class="item"><a href="#" class="link current">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts"
-              ><svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__element"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts"
-              ><svg class="contacts-icon" width="16" height="12">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__element"
+              ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -49,79 +49,79 @@
       </div>
     </header>
     <main>
-      <section class="hero section overlay">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button" data-modal-open>Замовити послугу</button>
+      <section class="hero">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
 
-      <section class="section advantadges">
+      <section class="advantages">
         <div class="container">
           <h2 hidden>Переваги</h2>
-          <ul class="list advantadges">
-            <li class="item-advantadges">
-              <div class="icon">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">Увага до деталей</h3>
-              <p class="section-text">
+              <h3 class="advantages__subtitle">Увага до деталей</h3>
+              <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item-advantadges">
-              <div class="icon">
+            <li class="advantadges__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">Пунктуальність</h3>
-              <p class="section-text">
+              <h3 class="advantages__subtitle">Пунктуальність</h3>
+              <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item-advantadges">
-              <div class="icon">
+            <li class="advantadges__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">Планування</h3>
-              <p class="section-text">
+              <h3 class="advantages__subtitle">Планування</h3>
+              <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item-advantadges">
-              <div class="icon">
+            <li class="advantadges__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">Сучасні технології</h3>
-              <p class="section-text">
+              <h3 class="advantages__subtitle">Сучасні технології</h3>
+              <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section activity">
+      <section class="activity">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list images">
-            <li class="item-images">
+          <h2 class="activity__title">Чим ми займаємося</h2>
+          <ul class="activity__images">
+            <li class="activity__images--item">
               <img src="./images/img1.jpg" alt="Руки на клавіатурі" width="370" height="294" />
               <div class="caption">
                 <p>Десктопні додатки</p>
               </div>
             </li>
-            <li class="item-images">
+            <li class="activity__images--item">
               <img src="./images/img2.jpg" alt="Відкритий ноутбук" width="370" height="294" />
               <div class="caption">
                 <p>Мобільні додатки</p>
               </div>
             </li>
-            <li class="item-images">
+            <li class="activity__images--item">
               <img src="./images/img3.jpg" alt="Планшет в руці" width="370" height="294" />
               <div class="caption">
                 <p>Дизайнерські рішення</p>

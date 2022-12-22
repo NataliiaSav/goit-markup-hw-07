@@ -91,7 +91,7 @@ img {
     display: flex;
     margin-left: 93px;
 }
-.site-nav .item + .item {
+.site-nav .item:not(last-child)  {
     margin-left: 50px;
 }
 .site-nav .link {
@@ -224,6 +224,18 @@ div.icon {
     background-color: var(--tertiary-bcg-color);
     border-radius: 4px;
 }
+.section-subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.section-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+}
     
 /* секція діяльність */
 
@@ -237,17 +249,7 @@ div.icon {
     text-align: center;
     color: var(--title-color);
 }
-.section-subtitle {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--title-color);
-}
-.section-text {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.7;
-    }
+
 .list.images {
     display: flex;
     margin-top: 50px;
