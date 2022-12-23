@@ -1,0 +1,31 @@
+.clients {
+    @extend %section;
+    @extend %container;
+
+    &__title {
+        @extend %title;
+    }
+    &__set {
+        display: flex;
+        gap: 30px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        margin-top: 50px;
+        border: 1px solid $iconColor;
+        border-radius: $borderRadius;
+        fill: var(--icon-color);
+
+        transition: fill 250ms $cubicBezier, border 250ms $cubicBezier;
+    }
+    &__item:hover,
+    &__item:focus {
+        fill: $accentColor;
+        border: 1px solid $accentColor;
+        cursor: pointer;
+    }
+}
