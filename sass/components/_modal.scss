@@ -51,12 +51,5 @@
     &__close:focus {
         fill: $accentColor;
     }
-    &__title {
-        padding-bottom: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        color: var(--title-color);
-    }
+
 }
