@@ -1,9 +1,13 @@
 .advantages {
     @extend %section;
-    @extend %container;
-    display: flex;
-    gap: 30px;
 
+    &__container {
+        @extend %container;
+    }
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
     &__item {
         width: 270px;
     }
@@ -23,7 +27,6 @@
         text-transform: uppercase;
         color: $titleColor;
     }
-
     &__text {
         margin-top: 10px;
         font-size: 14px;
