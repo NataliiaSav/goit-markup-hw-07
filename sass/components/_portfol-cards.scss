@@ -1,4 +1,7 @@
-.cards__set {
+.container {
+    @extend %container; 
+}
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

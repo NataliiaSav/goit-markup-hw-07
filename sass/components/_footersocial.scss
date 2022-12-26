@@ -16,19 +16,20 @@
         padding-top: 20px;
         gap: 10px;
     }
+    
     &__item {
         border-radius: 50%;
 
         transition: background-color 250ms $cubicBezier;
     }
-
-    &__item:hover,
-    &__item:focus {
-        background-color: var(--accent-color);
-    }
     &__link {
-    @extend %sociallink;
-        background-color: rgba(255, 255, 255, 0.1);
-        fill: var(--primary-white-color);
+        @extend %sociallink;
+            background-color: rgba(255, 255, 255, 0.1);
+            fill: $primaryWhiteColor;
+        
+        &:hover,
+        &:focus {
+            background-color: $accentColor;
+        }
     }
 }

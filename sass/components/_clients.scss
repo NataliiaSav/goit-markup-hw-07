@@ -1,7 +1,9 @@
 .clients {
     @extend %section;
-    @extend %container;
 
+    &__container {
+    @extend %container;
+    }
     &__title {
         @extend %title;
     }
@@ -18,7 +20,7 @@
         margin-top: 50px;
         border: 1px solid $iconColor;
         border-radius: $borderRadius;
-        fill: var(--icon-color);
+        fill: $iconColor;
 
         transition: fill 250ms $cubicBezier, border 250ms $cubicBezier;
     }

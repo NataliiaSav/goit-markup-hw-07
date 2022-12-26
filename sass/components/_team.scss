@@ -1,12 +1,14 @@
 .team {
     @extend %section;
-    @extend %container;
     margin-top: 32px;
     background-color: $tertiaryBcgColor;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
+    &__container {
+        @extend %container;
+    }
     &__title {
         @extend %title;
     }
@@ -14,7 +16,6 @@
     &__list {
         display: flex;
         margin-top: 50px;
-        margin-left: 15px;
         text-align: center;
         gap: 30px;
     }

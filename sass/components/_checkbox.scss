@@ -25,7 +25,7 @@
     &__link {
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        color: var(--accent-color);
+        color: $accentColor;
     }
 
     &__input:checked + &__icon {
