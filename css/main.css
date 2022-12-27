@@ -157,9 +157,7 @@ a {
 .contacts {
   display: flex;
   margin-left: auto;
-}
-.contacts__element:last-child {
-  margin-left: 40px;
+  gap: 10px 40px;
 }
 .contacts__element {
   font-weight: 500;
@@ -326,6 +324,7 @@ a {
 
 .clients__set {
   display: flex;
+  margin-top: 50px;
   gap: 30px;
 }
 .clients__item {
@@ -334,7 +333,6 @@ a {
   align-items: center;
   width: 170px;
   height: 92px;
-  margin-top: 50px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
